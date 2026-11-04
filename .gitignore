@@ -1,0 +1,81 @@
+# ==============================================================
+# .gitignore for Rhino / Grasshopper / C# repositories
+# Use the same file at the root of every repo.
+# The last matching rule wins, so keep the sections in this order.
+# ==============================================================
+
+# --- 1. Files that go in only on purpose ----------------------
+
+# Rhino models: keeps client and job geometry out of the repo.
+# Internalise example geometry in the .gh, or put a small model in examples/.
+*.3dm
+
+# Generated CNC output (G-code, Biesse bSolid / BiesseWorks).
+# Commit only deliberate samples, kept in examples/ or samples/.
+*.nc
+*.gcode
+*.ngc
+*.tap
+*.cix
+*.bpp
+
+# Anything you place in examples/ or samples/ is kept...
+!**/examples/**
+!**/samples/**
+
+# --- 2. Never commit (the rules below apply everywhere) -------
+
+# macOS
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Windows (Rhino on a PC)
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Rhino backups, lock files and autosaves
+*.3dmbak
+*.bak
+*.rhl
+*.3dmrhl
+RhinoAutosave*.3dm
+
+# Grasshopper autosaves (saved next to the .gh, "[autosave]" in the name)
+*autosave*.gh
+*autosave*.ghx
+
+# Compiled plugins and builds: attach .gha / .rhp / .yak to GitHub Releases instead
+bin/
+obj/
+*.gha
+*.rhp
+*.yak
+*.dll
+*.pdb
+*.user
+*.suo
+.vs/
+.idea/
+.vscode/
+packages/
+*.nupkg
+
+# Python (Rhino 8 scripts)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Raw screen recordings: keep the short GIFs in media/
+*.mov
+
+# Local secrets
+.env

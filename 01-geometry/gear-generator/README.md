@@ -2,9 +2,7 @@
 
 Involute spur gears and the racks that mesh with them, as closed planar curves ready to extrude, cut or print.
 
-<!-- Add a picture of a gear and rack, then delete these two comment lines:
-![gear and rack](media/gear-generator.png)
--->
+![Changing pressure angle, module and tooth count: the gear and its rack update together](media/gear-generator.gif)
 
 | File | Component | Makes |
 | :-- | :-- | :-- |

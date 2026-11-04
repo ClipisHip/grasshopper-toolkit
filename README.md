@@ -2,9 +2,9 @@
 
 C# components for Grasshopper (Rhino 8) from my design and fabrication work: lofting from sections, gears, threaded fasteners and springs, CNC outlines and the small utilities I use in most definitions, plus a first structural analysis example in RFEM 6. Each tool has its own folder with its code or definition and a README.
 
-<!-- Add one strong image of a tool at work, then delete these two comment lines:
-![grasshopper-toolkit](01-geometry/slice-to-loft/media/slice-to-loft.gif)
--->
+![gear-generator: changing pressure angle, module and tooth count updates the gear and its rack](01-geometry/gear-generator/media/gear-generator.gif)
+
+<!-- When the slice-to-loft GIF exists, you can swap it in here: 01-geometry/slice-to-loft/media/slice-to-loft.gif -->
 
 ## Tools
 
